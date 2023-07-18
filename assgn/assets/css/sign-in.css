@@ -1,0 +1,35 @@
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    margin-top: 30px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

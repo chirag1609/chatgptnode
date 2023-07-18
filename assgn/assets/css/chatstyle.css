@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: bisque; */
+  }
+
+  .chat-container {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .message-container {
+    margin-bottom: 10px;
+  }
+
+  .user-message {
+    color: blue;
+  }
+
+  .assistant-message {
+    color: green;
+  }

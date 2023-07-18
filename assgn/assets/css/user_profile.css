@@ -1,0 +1,29 @@
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    form {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      padding: 5px;
+      margin-bottom: 10px;
+      width: 300px;
+    }
+
+    input[type="submit"] {
+      padding: 5px 10px;
+    }

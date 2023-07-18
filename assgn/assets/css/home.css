@@ -1,0 +1,22 @@
+body {
+    background-color: #f5eec2;
+    text-align: center;
+  }
+  .containerHome {
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  .buttonHome {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }

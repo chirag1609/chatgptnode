@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="/css/user_profile.css"
+</head>
+<body>
+  <h1>User Profile Page</h1>
+  <p>Name: <%= profile_user.name %></p>
+  <p>Email: <%= profile_user.email %></p>
+  <br>
+  <% if(user.id == profile_user.id) { %>
+    <h2>Hi, <%= profile_user.name %>! Now you can update your profile</h2>
+    <form action="/users/update/<%= profile_user.id %>" method="POST">
+      <input type="text" name="name" placeholder="<%= profile_user.name %>" value="<%= profile_user.name %>">
+      <input type="email" name="email" placeholder="<%= profile_user.email %>" value="<%= profile_user.email %>">
+      <input type="submit" value="Update">
+    </form>
+  <% } %>
+</body>
+</html>

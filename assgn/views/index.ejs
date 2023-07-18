@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AskMeAnything Bot</title>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      AskMeAnything Bot
+    </div>
+    <div class="chat-body">
+      <% history.forEach(chat => { %>
+        <div class="chat-message user-message">
+          <strong>You:</strong> <%= chat.userInput %>
+        </div>
+        <div class="chat-message assistant-message">
+          <strong>Assistant:</strong> <%= chat.completionText %>
+        </div>
+      <% }) %>
+    </div>
+    <% if (locals.user) { %>
+      <div class="chat-form">
+        <form action="/chatbots" method="POST">
+          <input type="text" name="user_input" placeholder="Your message" required>
+          <button type="submit">Send</button>
+        </form>
+        <form action="/chatbots/clear" method="POST">
+          <button type="submit">Clear Chat</button>
+        </form>
+      </div>
+    <% } else { %>
+      <div class="login-message">
+        <h4>Please Login First to Ask Questions With the Bot</h4>
+      </div>
+    <% } %>
+  </div>
+</body>
+</html>
